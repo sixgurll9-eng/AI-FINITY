@@ -52,7 +52,7 @@ if st.button("Analisis Keuangan"):
     """
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama-3.3-70b-versatile", #MODEL BARU
         messages=[{"role": "user", "content": prompt}]
     )
 
