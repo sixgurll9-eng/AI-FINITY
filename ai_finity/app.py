@@ -52,7 +52,7 @@ if st.button("Analisis Keuangan"):
     """
 
     response = client.chat.completions.create(
-        model="qwen-2.5-7b-instruct",
+        model="llama3-8b-8192",
         messages=[{"role": "user", "content": prompt}]
     )
 
