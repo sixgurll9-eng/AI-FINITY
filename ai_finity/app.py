@@ -56,7 +56,7 @@ if st.button("Analisis Keuangan"):
         messages=[{"role": "user", "content": prompt}]
     )
 
-    result = response.choices[0].message["content"]
+    result = response.choices[0].message.content
     st.success("Analisis selesai!")
     st.write(result)
 
